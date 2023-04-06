@@ -9,7 +9,7 @@ on:
 name: R-CMD-check
 
 jobs:
-  R-CMD-check:
+  CRAN-R-CMD-check:
     runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
