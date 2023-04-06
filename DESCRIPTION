@@ -37,7 +37,6 @@ Suggests:
     ranger,
     xgboost,
     lightgbm,
-    catboost (>= 0.22),
     jsonlite,
     testthat,
     scales,
