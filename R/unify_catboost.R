@@ -62,7 +62,7 @@ catboost.unify <- function(catboost_model, data, recalculate = FALSE) {
 
 
   path_to_save <- tempfile("catboost_model", fileext = ".json")
-  catboost.save_model(catboost_model, path_to_save, 'json')
+  catboost::catboost.save_model(catboost_model, path_to_save, 'json')
   json_data <- jsonlite::read_json(path_to_save)
 
 
