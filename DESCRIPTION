@@ -42,6 +42,8 @@ Suggests:
     testthat,
     scales,
     survival
+Remotes:
+    catboost/catboost/catboost/R-package@*release
 URL: https://github.com/ModelOriented/treeshap
 BugReports: https://github.com/ModelOriented/treeshap/issues
-Additional_repositories: https://github.com/catboost/catboost/tree/master/catboost/R-package
+Additional_repositories: https://github.com/catboost/catboost
