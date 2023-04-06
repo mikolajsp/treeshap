@@ -24,6 +24,7 @@
 #' \code{\link{randomForest.unify}} for \code{\link[randomForest:randomForest]{randomForest models}}
 #'
 #' @examples
+#' if(requireNamespace(catboost)){
 #' library(catboost)
 #' data <- fifa20$data[colnames(fifa20$data) != 'work_rate']
 #' data <- as.data.frame(lapply(data, as.numeric))
@@ -37,6 +38,7 @@
 #' um <- catboost.unify(cat_model, data)
 #' shaps <- treeshap(um, data[1:2, ])
 #' plot_contribution(shaps, obs = 1)
+#' }
 catboost.unify <- function(catboost_model, data, recalculate = FALSE) {
   if (class(catboost_model) != "catboost.Model") {
     stop('Object catboost_model is not of type "catboost.Model"')
