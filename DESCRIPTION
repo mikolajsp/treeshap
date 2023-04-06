@@ -31,7 +31,8 @@ Imports:
     ggplot2
 Depends: 
     R (>= 2.10)
-Suggests: 
+Suggests:
+    catboost,
     gbm,
     randomForest,
     ranger,
@@ -43,3 +44,4 @@ Suggests:
     survival
 URL: https://github.com/ModelOriented/treeshap
 BugReports: https://github.com/ModelOriented/treeshap/issues
+Additional_repositories: https://github.com/catboost/catboost/tree/master/catboost/R-package
