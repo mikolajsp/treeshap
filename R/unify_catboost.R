@@ -59,11 +59,11 @@ catboost.unify <- function(catboost_model, data, recalculate = FALSE) {
          call. = FALSE)
   }
 
-  if(requireNamespace("catboost", quietly = TRUE)){
-    path_to_save <- tempfile("catboost_model", fileext = ".json")
-    catboost::catboost.save_model(catboost_model, path_to_save, 'json')
-    json_data <- jsonlite::read_json(path_to_save)
-  }
+  # if(requireNamespace("catboost", quietly = TRUE)){
+  #   path_to_save <- tempfile("catboost_model", fileext = ".json")
+  #   catboost::catboost.save_model(catboost_model, path_to_save, 'json')
+  #   json_data <- jsonlite::read_json(path_to_save)
+  # }
 
   if (!is.null(json_data$features_info$categorical_features)) {
     stop('catboost.unify() function currently does not support models using categorical features.')
